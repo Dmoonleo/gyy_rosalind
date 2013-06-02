@@ -1,0 +1,28 @@
+def pow(a, b):
+    if b is 0:
+        return 1
+    if b is 1:
+        return a
+    else:
+        return pow(a, b-1)*a
+
+
+def fac(a):
+    if a is 0:
+        return 1
+    else:
+        return a*fac(a-1)
+
+
+def comb(a, b):
+    return fac(a)/fac(b)/fac(a-b)
+
+
+def p(a, b):
+    return fac(a)/fac(a-b)
+
+k = 8
+n = 92
+result = p(n, k) % 1000000
+
+print result

@@ -1,0 +1,70 @@
+DNA	Counting DNA Nucleotides	6142	
+ 3 weeks	  10 minutes	  2 months
+RNA	Transcribing DNA into RNA	5367	
+ 6 months	  6 days	  3 months
+REVC	Complementing a Strand of DNA	4867	
+ 3 months	  2 weeks	  3 months
+FIB	Rabbits and Recurrence Relations	1120	
+ 1 month	  2 weeks	  3 weeks
+GC	Computing GC Content	2898	
+ 1 month	  1 week	  1 month
+HAMM	Counting Point Mutations	3572	
+ 2 months	  3 weeks	  1 month
+IPRB	Mendel's First Law	1200	
+ 1 month	  1 week	  2 months
+PROT	Translating RNA into Protein	2466	
+ 1 week	  3 days	
+SUBS	Finding a Motif in DNA	2778	
+ 4 months	  2 weeks	  2 months
+CONS	Consensus and Profile	1654	
+ 1 month	  3 weeks	
+FIBD	Mortal Fibonacci Rabbits	446	
+ 9 hours	  1 day	  1 week
+GRPH	Overlap Graphs	1403	
+ 2 weeks	  1 week	
+IEV	Calculating Expected Offspring	748	
+ 1 month	  2 months
+LCSM	Finding a Shared Motif	1120	
+ 4 months	  2 days	  1 month
+LIA	Independent Alleles	385	
+ 2 weeks	  1 month	  1 month
+MRNA	Inferring mRNA from Protein	1029	
+ 1 month	  1 day	  1 month
+ORF	Open Reading Frames	745	
+ 4 days	  1 week	
+PERM	Enumerating Gene Orders	1959	
+ 2 months	  1 week	
+PRTM	Calculating Protein Mass	1167	
+ 2 months	  3 weeks	  2 months
+REVP	Locating Restriction Sites	1017	
+ 1 month	  3 weeks	
+SPLC	RNA Splicing	865	
+ 3 weeks	  1 month	
+LEXF	Enumerating k-mers Lexicographically	1006	
+ 2 months	  1 week	  2 months
+LGIS	Longest Increasing Subsequence	207	
+ 2 days	
+PMCH	Perfect Matchings and RNA Secondary Structures	157	
+ 2 months	  2 months
+PROB	Introduction to Random Strings	438	
+ 1 week	  1 week	
+SIGN	Enumerating Oriented Gene Orderings	676	
+ 1 month	
+TREE	Completing a Tree	569	
+ 4 days	  1 month	  3 months
+CAT	Catalan Numbers and RNA Secondary Structures	58	
+ 4 days	
+INOD	Counting Phylogenetic Ancestors	456	
+ 4 weeks	
+KMP	Speeding Up Motif Finding	546	
+ 5 months	  2 months	
+LEXV	Ordering Strings of Varying Length Lexicographically	609	
+ 4 days	
+PDST	Creating a Distance Matrix	330	
+ 5 months	  1 month	
+REAR	Reversal Distance	272	
+ 4 months	  1 week	  2 months
+SORT	Sorting by Reversals	204	
+ 4 months	  4 months	
+TRIE	Introduction to Pattern Matching	172	
+ 3 months	  1 day	
