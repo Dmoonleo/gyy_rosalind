@@ -46,7 +46,6 @@ int main()
 	for(int i=0; i<50; i++)
 	{
 		DNA[i] = getDNA();
-		//cout << DNA[i] << endl;
 	}
 	for(int i=0; i<50; i++)
 	{
@@ -57,11 +56,7 @@ int main()
 		else
 			break;
 	}
-	cout << size << endl;
-	for(int i=0; i<50; i++)
-	{
-		//cout << DNA[i] << endl;
-	}
+	//cout << size << endl;
 	string result[50];
 
 	int* begin = new int[size];
@@ -79,57 +74,65 @@ int main()
 		if(begin[i] != -2)
 			b = i;
 	}
-	cout << "b: " << b << endl;
+	//cout << "b: " << b << endl;
 	string r = DNA[b];
 	bool flag = true;
 	int ii = b;
-	while(ii != b || flag)
+
+	for(int i=0; i<size; i++)
 	{
-		flag = false;
+		//cout << result[i].length() << endl;
+	}
+
+	int bbegin = 0;
+	for(int i=0; i<size; i++)
+	{
 		for(int j=0; j<size; j++)
 		{
-			cout << "test" << ii << " " << j << endl;
-			if(halfmatch(DNA[ii], DNA[j]))
+
+			if(halfmatch(DNA[i], DNA[j]))
 			{
-				result[ii] = hms(result[ii],DNA[j]);
-				ii = j;
-				break;
-			}		
+				//cout << i << " " << j << endl;
+				bbegin += j;
+			}				
 		}
+
 	}
-	/*for(int i=0; i<size; i++)
+
+	bbegin = - bbegin + size*(size-1)/2;
+	//cout << "testt" << endl;
+	//cout << bbegin << endl;
+
+	int eend = 0;
+	int* turn = new int[size];
+	for(int i=0; i<size; i++)
 	{
-		int ii = i;
-		result[ii] = DNA[i];
-		bool flag = true;
-		while(ii != i || flag)
+		for(int j=0; j<size; j++)
 		{
-			flag = false;
-			for(int j=0; j<size; j++)
-			{
-				cout << "test" << ii << " " << j << endl;
-				if(halfmatch(DNA[ii], DNA[j]))
-				{
-					result[ii] = hms(result[ii],DNA[j]);
-					ii = j;
-					break;
-				}		
-			}
-		}
-	}*/
 
-		for(int i=0; i<size; i++)
-		{
-			cout << result[i].length() << endl;
+			if(halfmatch(DNA[i], DNA[j]))
+			{
+				eend += i;
+				turn[i] = j;
+			}				
 		}
 
-		for(int i=0; i<size; i++)
-		{
-			for(int j=0; j<size; j++)
-			{
-				if(halfmatch(DNA[i], DNA[j]))
-					cout << i << " " << j << endl;
-			}
-		}
-		return 0;
 	}
+	////cout << eend << endl;
+	eend = size*(size-1)/2 - eend;
+	////cout << eend << endl;
+
+	int iii = bbegin;
+	string rresult = DNA[bbegin];
+	while(iii != eend)
+	{
+		iii = turn[iii];
+		//cout << "iii: " << iii << endl;
+		rresult = hms(rresult, DNA[iii]);
+		if(iii == eend)
+			break;
+	}
+	////cout << "test" << endl;
+	cout << rresult << endl;
+	return 0;
+}
