@@ -70,7 +70,7 @@ for i in wrong:
             if result1 == result:
                 break
             else:
-                #rint result1
+                print result1
                 result = result1
                 break
 
