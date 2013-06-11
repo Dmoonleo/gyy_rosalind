@@ -1,6 +1,7 @@
 #include <iostream>
 using namespace std;
 
+//???
 string r(string temp)
 {
 	string result = "";
