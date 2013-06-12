@@ -2,6 +2,7 @@ import urllib
 import re
 import sys
 
+#??? test
 while True:
     try:
         dna_id = ""
