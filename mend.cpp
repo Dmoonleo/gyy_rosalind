@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-class prob{
+class prob
+{
 public:
 	double AA;
 	double Aa;
