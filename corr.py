@@ -10,7 +10,6 @@ def similar(a, b):
     else:
         return False
 
-
 def rc(a):
     b = a[::-1]
     c = ""
